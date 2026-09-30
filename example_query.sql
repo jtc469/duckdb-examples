@@ -2,9 +2,10 @@
 
 WITH users_with_zero_transactions AS (
     SELECT 
-    *
-    FROM transactions as t 
-    RIGHT JOIN users as u 
+        u.user_id,
+        u.signup_date
+    FROM transactions AS t 
+    RIGHT JOIN users AS u 
         ON t.user_id = u.user_id 
     WHERE t.user_id IS NULL
 )
