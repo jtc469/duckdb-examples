@@ -2,4 +2,4 @@
 
 * Based on example financial data csvs (data/.)
 
-* Run with `duckdb -f example_query.sql`
+* Initial run with `duckdb -f data_sources.sql && duckdb -f example_query.sql`
